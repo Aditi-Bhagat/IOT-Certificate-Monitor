@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { fetchSensors, fetchCertificates, fetchAlerts, simulateExpiry, resetDemo } from '../utils/api';
+import { fetchSensors, fetchCertificates, fetchAlerts, simulateExpiry, resetDemo } from "./api";
 
 export function usePolling(intervalMs = 1000) {
   const [sensors, setSensors] = useState([]);
