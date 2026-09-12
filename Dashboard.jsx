@@ -17,8 +17,9 @@ import {
 import StatusCard from "./StatusCard";
 import SensorTable from "./SensorTable";
 import AlertPanel from "./AlertPanel";
+import RootCauseCard from "./RootCauseCard";
+import Charts from "./Charts";
 import { TelemetryLineChart, CertHealthPieChart, ExpiryTimelineBarChart } from '../components/Charts';
-import RootCauseCard from '../components/RootCauseCard';
 import { getHealthScoreCategory } from '../utils/certificateUtils';
 
 export default function Dashboard({
