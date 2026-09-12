@@ -1,6 +1,6 @@
 import React from 'react';
 import { Radio, AlertTriangle, ShieldCheck, ShieldAlert, Clock, ArrowUpRight } from 'lucide-react';
-import { getStatusBadge, getTelemetryBadge } from '../utils/certificateUtils';
+import { getStatusBadge, getTelemetryBadge } from './certificateUtils';
 
 export default function SensorTable({ sensors = [], onSelectSensor = null }) {
   return (
