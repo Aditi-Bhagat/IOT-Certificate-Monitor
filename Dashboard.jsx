@@ -14,9 +14,9 @@ import {
   RefreshCw,
   Sparkles,
 } from 'lucide-react';
-import StatusCard from '../components/StatusCard';
-import SensorTable from '../components/SensorTable';
-import AlertPanel from '../components/AlertPanel';
+import StatusCard from "./StatusCard";
+import SensorTable from "./SensorTable";
+import AlertPanel from "./AlertPanel";
 import { TelemetryLineChart, CertHealthPieChart, ExpiryTimelineBarChart } from '../components/Charts';
 import RootCauseCard from '../components/RootCauseCard';
 import { getHealthScoreCategory } from '../utils/certificateUtils';
