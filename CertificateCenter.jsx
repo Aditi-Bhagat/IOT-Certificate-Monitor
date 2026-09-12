@@ -1,7 +1,7 @@
 import React from 'react';
 import { Key, ShieldCheck, ShieldAlert, Cpu, CalendarClock, Lock, CheckCircle2 } from 'lucide-react';
-import CertificateTable from '../components/CertificateTable';
-import CertChainViewer from '../components/CertChainViewer';
+import CertificateTable from "./CertificateTable";
+import CertChainViewer from "./CertChainViewer";
 
 export default function CertificateCenter({ certificates = [], sensors = [] }) {
   const totalCerts = certificates.length;
