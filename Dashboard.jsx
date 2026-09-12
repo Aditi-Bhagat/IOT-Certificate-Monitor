@@ -18,11 +18,6 @@ import StatusCard from "./StatusCard";
 import SensorTable from "./SensorTable";
 import AlertPanel from "./AlertPanel";
 import RootCauseCard from "./RootCauseCard";
-import {
-  TelemetryLineChart,
-  CertHealthPieChart,
-  ExpiryTimelineBarChart
-} from "./Charts";
 import { TelemetryLineChart, CertHealthPieChart, ExpiryTimelineBarChart } from "./Charts";
 import { getHealthScoreCategory } from "./certificateUtils";
 
