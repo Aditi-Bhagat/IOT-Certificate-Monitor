@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IoT TLS Certificate Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>IoT TLS Certificate Monitor</h1>
+      <p>Real-time certificate health dashboard for simulated plant sensors</p>
+    </header>
+
+    <section class="overall-status" id="overallStatus">Loading...</section>
+
+    <section class="stats-grid">
+      <div class="card"><h3>Total Sensors</h3><p id="totalCount">0</p></div>
+      <div class="card valid"><h3>Valid</h3><p id="validCount">0</p></div>
+      <div class="card warning"><h3>Warning</h3><p id="warningCount">0</p></div>
+      <div class="card critical"><h3>Critical</h3><p id="criticalCount">0</p></div>
+      <div class="card expired"><h3>Expired</h3><p id="expiredCount">0</p></div>
+      <div class="card invalid"><h3>Invalid</h3><p id="invalidCount">0</p></div>
+    </section>
+
+    <section class="actions">
+      <label for="sensorSelect">Select Sensor:</label>
+      <select id="sensorSelect"></select>
+      <button id="simulateButton">Simulate Certificate Expiry</button>
+    </section>
+
+    <section class="alerts">
+      <h2>Active Alerts</h2>
+      <div id="alertsContainer">No active alerts</div>
+    </section>
+
+    <section class="sensors">
+      <h2>Sensor Status</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Sensor</th>
+            <th>Type</th>
+            <th>Endpoint</th>
+            <th>Current Value</th>
+            <th>Certificate Status</th>
+            <th>Expiry Date</th>
+            <th>Days Remaining</th>
+          </tr>
+        </thead>
+        <tbody id="sensorsBody"></tbody>
+      </table>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

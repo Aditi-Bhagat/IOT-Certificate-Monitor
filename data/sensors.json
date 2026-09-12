@@ -1,0 +1,38 @@
+[
+  {
+    "sensor_id": "SENSOR-001",
+    "name": "Temperature Sensor",
+    "type": "temperature",
+    "endpoint": "google.com",
+    "port": 443,
+    "current_value": 0,
+    "certificate_status": "UNKNOWN"
+  },
+  {
+    "sensor_id": "SENSOR-002",
+    "name": "Pressure Sensor",
+    "type": "pressure",
+    "endpoint": "github.com",
+    "port": 443,
+    "current_value": 0,
+    "certificate_status": "UNKNOWN"
+  },
+  {
+    "sensor_id": "SENSOR-003",
+    "name": "Gas Sensor",
+    "type": "gas",
+    "endpoint": "microsoft.com",
+    "port": 443,
+    "current_value": 0,
+    "certificate_status": "UNKNOWN"
+  },
+  {
+    "sensor_id": "SENSOR-004",
+    "name": "Flow Sensor",
+    "type": "flow",
+    "endpoint": "cloudflare.com",
+    "port": 443,
+    "current_value": 0,
+    "certificate_status": "UNKNOWN"
+  }
+]

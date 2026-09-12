@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1d2939;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  margin-bottom: 4px;
+}
+
+.overall-status {
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.overall-secure {
+  background: #dcfae6;
+  color: #166534;
+}
+
+.overall-attention {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.overall-alert {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card p {
+  font-size: 26px;
+  margin: 8px 0 0 0;
+}
+
+.valid { border-left: 6px solid #16a34a; }
+.warning { border-left: 6px solid #eab308; }
+.critical { border-left: 6px solid #f97316; }
+.expired { border-left: 6px solid #dc2626; }
+.invalid { border-left: 6px solid #7c3aed; }
+
+.actions,
+.alerts,
+.sensors {
+  margin-top: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+button {
+  background: #b91c1c;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #991b1b;
+}
+
+select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #d0d5dd;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #eaecf0;
+  text-align: left;
+  padding: 10px;
+}
+
+.status-pill {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-VALID { background: #dcfae6; color: #166534; }
+.status-WARNING { background: #fef9c3; color: #854d0e; }
+.status-CRITICAL { background: #ffedd5; color: #9a3412; }
+.status-EXPIRED { background: #fee2e2; color: #991b1b; }
+.status-INVALID { background: #f3e8ff; color: #6b21a8; }
+
+.alert-item {
+  border-left: 5px solid #dc2626;
+  background: #fef2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+}
