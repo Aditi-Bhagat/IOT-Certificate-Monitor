@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Factory, ShieldCheck, ShieldAlert, AlertTriangle, Layers, Filter, CheckCircle2 } from 'lucide-react';
-import ZoneCard from '../components/ZoneCard';
-import SensorTable from '../components/SensorTable';
+import ZoneCard from "./ZoneCard";
+import SensorTable from "./SensorTable";
 
 export default function PlantZones({ sensors = [] }) {
   const [selectedZone, setSelectedZone] = useState('ALL');
