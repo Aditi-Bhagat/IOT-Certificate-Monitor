@@ -19,7 +19,7 @@ import SensorTable from "./SensorTable";
 import AlertPanel from "./AlertPanel";
 import RootCauseCard from "./RootCauseCard";
 import Charts from "./Charts";
-import { TelemetryLineChart, CertHealthPieChart, ExpiryTimelineBarChart } from '../components/Charts';
+import { TelemetryLineChart, CertHealthPieChart, ExpiryTimelineBarChart } from "./Charts";
 import { getHealthScoreCategory } from "./certificateUtils";
 
 export default function Dashboard({
