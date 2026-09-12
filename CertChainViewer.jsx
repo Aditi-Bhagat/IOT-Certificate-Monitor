@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShieldCheck, ShieldAlert, ArrowDown, Key, FileCode, CheckCircle, AlertTriangle } from 'lucide-react';
-import { getStatusBadge } from '../utils/certificateUtils';
+import { getStatusBadge } from './certificateUtils';
 
 export default function CertChainViewer({ certificate = null }) {
   const leafName = certificate?.certName || 'tls-sensor-device.chemsec.local';
