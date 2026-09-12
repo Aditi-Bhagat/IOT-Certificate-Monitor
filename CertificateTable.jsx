@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Search, Filter, ShieldCheck, ShieldAlert, Key, X, ExternalLink, Calendar, Server, Cpu, CheckCircle2 } from 'lucide-react';
-import { getStatusBadge } from '../utils/certificateUtils';
+import { getStatusBadge } from './certificateUtils';
 import CertChainViewer from './CertChainViewer';
 
 export default function CertificateTable({ certificates = [] }) {
