@@ -36,6 +36,7 @@ def classify_certificate_status(days_remaining: int, thresholds: Dict[str, int])
 def fetch_certificate_expiry(host: str, port: int = 443, timeout: int = 5) -> datetime:
     """Open a TLS connection and return the certificate expiry datetime."""
     context = ssl.create_default_context()
+    context.minimum_version = ssl.TLSVersion.TLSv1_2
     with socket.create_connection((host, port), timeout=timeout) as tcp_socket:
         with context.wrap_socket(tcp_socket, server_hostname=host) as tls_socket:
             certificate = tls_socket.getpeercert()
